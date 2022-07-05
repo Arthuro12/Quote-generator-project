@@ -54,11 +54,57 @@ namespace QuoteGenerator
             paragraph3.Alignment = Element.ALIGN_LEFT;
             doc.Add(paragraph3);
 
+            // Creation of the table of products
+            PdfPTable table = new PdfPTable(3);
+            table.WidthPercentage = 100;
 
+            // Table cell
+            AddCellToTable("Produktbezeichnung", fontTable, blue, table);
+            AddCellToTable("Menge", fontTable, blue, table);
+            AddCellToTable("Preis", fontTable, blue, table);
+
+            // List of products
+            string[] productInfos = new string[3];
+            productInfos[0] = nameTb.Text;
+            productInfos[1] = quantityTb.Text;
+            productInfos[2] = priceTb.Text;
+
+            foreach (string info in productInfos)
+            {
+                PdfPCell cell = new PdfPCell(new Phrase(info));
+                cell.BackgroundColor = gray;
+                cell.Padding = 7;
+                cell.BorderColor = gray;
+                table.AddCell(cell);
+            }
+
+            doc.Add(table);
+            doc.Add(new Phrase("\n"));
+
+            int totalPrice = int.Parse(priceTb.Text) * int.Parse(quantityTb.Text);
+            Paragraph paragraph4= new Paragraph("Ergebnis :  " + totalPrice + "\n\n", fontTitle);
+            paragraph4.Alignment = Element.ALIGN_LEFT;
+            doc.Add(paragraph4);
 
             // Close the document
             doc.Close();
             Process.Start(@"cmd.exe", @"/c " + outFilePath);
+        }
+
+        /// <summary>
+        /// Add a cell to the table
+        /// </summary>
+        /// <param name="contentCell"></param>
+        /// <param name="fontType"></param>
+        /// <param name="color"></param>
+        /// <param name="table"></param>
+        public void AddCellToTable(string contentCell, Font fontType, BaseColor color, PdfPTable table)
+        {
+            PdfPCell cell = new PdfPCell(new Phrase(contentCell, fontType));
+            cell.BackgroundColor = color;
+            cell.Padding = 7;
+            cell.BorderColor = color;
+            table.AddCell(cell);
         }
     }
 }

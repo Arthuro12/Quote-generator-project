@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B9nneh8X5ia6vrYPTuxDz5xpnXCSiSOIy/72plLqrsQOBFh4+q+P/Bbf4n1sZftM3XwvACj0V5uahRsAFsiXXg==",
+  "dgSpecHash": "QpzS2+hS7IGlYgpKxOLcK7X8wXUXdr6XDS8vzyJfyUMIl7QnWh2gQhAy2kQpw0nyKlrnZLXW07ccmNlRfgdHZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThinkPad\\source\\repos\\QuoteGenerator\\QuoteGenerator\\QuoteGenerator.csproj",
+  "projectFilePath": "C:\\Users\\ThinkPad\\source\\repos\\Quote-generator-project\\QuoteGenerator\\QuoteGenerator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ThinkPad\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
     "C:\\Users\\ThinkPad\\.nuget\\packages\\itextsharp\\5.5.13.3\\itextsharp.5.5.13.3.nupkg.sha512"

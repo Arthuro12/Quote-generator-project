@@ -70,11 +70,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThinkPad\\source\\repos\\QuoteGenerator\\QuoteGenerator\\QuoteGenerator.csproj",
+      "projectUniqueName": "C:\\Users\\ThinkPad\\source\\repos\\Quote-generator-project\\QuoteGenerator\\QuoteGenerator.csproj",
       "projectName": "QuoteGenerator",
-      "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\QuoteGenerator\\QuoteGenerator\\QuoteGenerator.csproj",
+      "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\Quote-generator-project\\QuoteGenerator\\QuoteGenerator.csproj",
       "packagesPath": "C:\\Users\\ThinkPad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThinkPad\\source\\repos\\QuoteGenerator\\QuoteGenerator\\obj\\",
+      "outputPath": "C:\\Users\\ThinkPad\\source\\repos\\Quote-generator-project\\QuoteGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
